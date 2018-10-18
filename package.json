@@ -5,9 +5,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
-    "deploy-test": "npm run build && surge public/ miguelpduarte.surge.sh",
-    "deploy-prod": "npm run build && surge public/"
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^2.0.0",
