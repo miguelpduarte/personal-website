@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy-test": "npm run build && surge public/ miguelpduarte.surge.sh",
+    "deploy-prod": "npm run build && surge public/"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-typography": "^2.2.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
+  },
+  "devDependencies": {
+    "surge": "^0.20.1"
+  }
+}
