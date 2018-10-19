@@ -1,11 +1,14 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "personal-website",
+  "description": "My personal site build using Gatsby",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint-fix": "eslint --ext .js,.jsx . --fix",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "gatsby": "^2.0.26",
@@ -15,7 +18,16 @@
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
   },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.jsx": "eslint"
+  },
+  "pre-commit": "lint-staged",
+  "pre-push": "",
   "devDependencies": {
-    "surge": "^0.20.1"
+    "eslint": "^5.7.0",
+    "lint-staged": "^7.3.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1"
   }
 }
