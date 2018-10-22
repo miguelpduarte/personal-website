@@ -16,7 +16,8 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.13",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "typography-theme-de-young": "^0.16.9"
   },
   "lint-staged": {
     "*.js": "eslint",
