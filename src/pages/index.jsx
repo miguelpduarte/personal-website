@@ -15,7 +15,7 @@ export default () => (
                         {name: "Test Homepage", linksto: "/homepage"},
                         {name: "My CV PDF", isHref: true, linksto: "https://drive.google.com/file/d/1_v428_PNMr-eWPq_rs9zJnaNKnY4bAuj/view?usp=sharing"},
                         {name: "Online CV", linksto: "cv"},
-                        {name: "JS Games", isHref: true, linksto: "https://js-games.miguelpduarte.com"},
+                        {name: "JS Games", isHref: true, linksto: "https://js-games.miguelpduarte.me"},
                     ]
                 }
             />
