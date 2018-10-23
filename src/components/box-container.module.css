@@ -1,0 +1,15 @@
+.box {
+    max-width: 50em;
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item {
+    margin: 1em 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
