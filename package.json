@@ -11,10 +11,12 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
-    "gatsby": "^2.0.26",
-    "gatsby-plugin-typography": "^2.2.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "gatsby": "^2.0.38",
+    "gatsby-plugin-typography": "^2.2.1",
+    "gatsby-source-filesystem": "^2.0.7",
+    "gatsby-transformer-remark": "^2.1.11",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
     "typography-theme-de-young": "^0.16.9"
@@ -26,7 +28,7 @@
   "pre-commit": "lint-staged",
   "pre-push": "",
   "devDependencies": {
-    "eslint": "^5.7.0",
+    "eslint": "^5.8.0",
     "lint-staged": "^7.3.0",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1"

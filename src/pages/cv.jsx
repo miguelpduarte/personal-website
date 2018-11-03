@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 export default () => (
     <Layout>
-        <h3>Para já copiado lmao, dps dar fix com base no cv pdf tb</h3>
+        <h3>WIP - Work in Progress</h3>
         <aside style={{float: "right"}}>
             <h1>Contacts (noheader)</h1>
             <h1>Download CV</h1>

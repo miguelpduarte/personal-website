@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import positionsStyles from "../css/positions.module.css";
 
 class Layout extends Component {
     render() {
         return (
-            <div style={{ margin: "2em auto", maxWidth: "50em"}}>
+            <div className={positionsStyles.horizontaleratorinator3000}>
                 <Navbar />
                 {this.props.children}
             </div>

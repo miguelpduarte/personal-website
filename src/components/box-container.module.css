@@ -1,15 +1,31 @@
 .box {
-    max-width: 50em;
-    padding: 1em;
-    border: 1px solid black;
+    min-width: 35em;
+    padding: 3em 3em 3em 3em;
+    border-radius: 32px;
     text-align: center;
+    background-color: white;
 }
 
 .item {
-    margin: 1em 1em;
+    margin: 0.3em 1em;
+    border: 1px solid black;
+    padding: 0 1em;
+    text-align: center;
+    height: 2em;
+    line-height: 1.75em;
+    border-radius: 8px;
+    box-shadow: none;
 }
 
-.flex-container {
+.item a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.list-container {
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
 }
