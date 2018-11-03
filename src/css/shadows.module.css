@@ -1,0 +1,17 @@
+.inner {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.regular {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.hovered-shadow:hover {
+    -moz-box-shadow:    0 0 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow:         0 0 6px rgba(0, 0, 0, 0.4);
+}
