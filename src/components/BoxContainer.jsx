@@ -6,7 +6,7 @@ import shadowStyles from "../css/shadows.module.css";
 export default class BoxContainer extends React.Component {
     render() {
         return (
-            <div className={`${boxContainerStyles.box} ${positionStyles.horizontaleratorinatorSmaller} ${shadowStyles.inner}`}>
+            <div className={`${boxContainerStyles.box} ${positionStyles.horizontaleratorinatorSmaller} ${shadowStyles.regular}`}>
                 {this.props.children}
             </div>
         );
