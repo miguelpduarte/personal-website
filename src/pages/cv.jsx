@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import CVSection from "../components/CVSection";
 
 export default () => (
     <Layout>
@@ -11,14 +12,15 @@ export default () => (
             <h1>Certificates</h1>
             <h1>Interests</h1>
         </aside>
-        <h1>Professional Experinece</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
-        <h1>Extra-Curricular Activities</h1>
+        <CVSection title="Professional Experience">
+            <ul>
+                <li>Lorem</li>
+                <li>Ipsum</li>
+                <li>Dolor</li>
+                <li>Sit Amet</li>
+            </ul>
+        </CVSection>
+        <h1>Education</h1>
         <ul>
             <li>Lorem</li>
             <li>Ipsum</li>
@@ -32,14 +34,14 @@ export default () => (
             <li>Dolor</li>
             <li>Sit Amet</li>
         </ul>
-        <h1>Skills</h1>
+        <h1>Extra-Curricular Activities</h1>
         <ul>
             <li>Lorem</li>
             <li>Ipsum</li>
             <li>Dolor</li>
             <li>Sit Amet</li>
         </ul>
-        <h1>Education</h1>
+        <h1>Skills</h1>
         <ul>
             <li>Lorem</li>
             <li>Ipsum</li>

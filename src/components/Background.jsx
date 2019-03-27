@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import backgroundStyles from "./background.module.css";
 
-export default class Background extends Component {
-    render() {
-        return (
-            <div className={`${backgroundStyles.bgLook} ${backgroundStyles.bgPos}`}>
-            </div>
-        );
-    }
-}
+export default () => (
+    <div className={`${backgroundStyles.bgLook} ${backgroundStyles.bgPos}`}>
+    </div>
+);
