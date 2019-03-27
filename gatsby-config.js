@@ -16,4 +16,9 @@ module.exports = {
         },
         "gatsby-transformer-remark",
     ],
+
+    siteMetadata: {
+        title: "Miguel's Place!",
+        description: "My personal website.",
+    },
 };
