@@ -7,3 +7,9 @@ date_end: 09/2018
 ---
 
 Static Website that queries Markdown files using GraphQL, developed using React and [GatsbyJS](https://gatsbyjs.org).
+
+**Technologies:**
+
+- [GatsbyJS](https://gatsbyjs.org)
+- React
+- GraphQL
