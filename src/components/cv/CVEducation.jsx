@@ -1,13 +1,13 @@
 import React from "react";
-import CVSection from "../components/CVSection";
+import CVSection from "./CVSection";
 import {graphql, StaticQuery} from "gatsby";
-import CVExperienceItem from "./CVExperienceItem";
+import CVEducationItem from "./CVEducationItem";
 
-const CVExperience = ({data}) => (
-    <CVSection title="Professional Experience">
+const CVEducation = ({data}) => (
+    <CVSection title="Education">
         {data.allMarkdownRemark.edges.map(({node}) => (
             <React.Fragment key={node.id}>
-                <CVExperienceItem node={node}/>
+                <CVEducationItem node={node}/>
             </React.Fragment>
         ))}
     </CVSection>
@@ -20,11 +20,10 @@ export default props => (
                 allMarkdownRemark(
                     filter: {
                         frontmatter: {
-                            cv_section: {eq: "experience"}
+                            cv_section: {eq: "education"}
                         }
                     }
                 ) {
-                    totalCount
                     edges {
                         node {
                             id
@@ -41,6 +40,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVExperience data={data} {...props} />}
+        render={data => <CVEducation data={data} {...props} />}
     />
 );

@@ -5,7 +5,7 @@
 
 .horizontaleratorinator-3000 {
     margin: 2em auto;
-    max-width: 50em;
+    max-width: 60em;
 }
 
 .verticalizerinator-9001 {
@@ -15,4 +15,14 @@
 
 .stretchinerino-vertical {
     height: 100vh;
+}
+
+.two-column-container {
+    display: grid;
+    grid-template: auto / 50% 50%;
+}
+
+.unbalanced-two-column-container {
+    display: grid;
+    grid-template: auto / 70% auto;
 }
