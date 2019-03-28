@@ -1,7 +1,7 @@
 .box {
     min-width: 20em;
     padding: 3em 3em 3em 3em;
-    border-radius: 32px;
+    border-radius: 10px;
     text-align: center;
     background-color: white;
 }
@@ -9,10 +9,8 @@
 .item {
     margin: 0.3em 1em;
     border: 1px solid black;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     text-align: center;
-    height: 2em;
-    line-height: 1.75em;
     border-radius: 8px;
     box-shadow: none;
 }
@@ -25,7 +23,7 @@
 .list-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 1em;
 }

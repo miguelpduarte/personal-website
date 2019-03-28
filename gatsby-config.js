@@ -10,10 +10,15 @@ module.exports = {
         {
             resolve: "gatsby-source-filesystem",
             options: {
-                name: "data",
-                path: `${__dirname}/src/data`, // eslint-disable-line
+                name: "src",
+                path: `${__dirname}/src/`, // eslint-disable-line
             },
         },
         "gatsby-transformer-remark",
     ],
+
+    siteMetadata: {
+        title: "Miguel's Place!",
+        description: "My personal website.",
+    },
 };

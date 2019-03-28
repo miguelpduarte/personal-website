@@ -1,50 +1,50 @@
 import React from "react";
 import Layout from "../components/Layout";
+import {graphql} from "gatsby";
+import CVExperience from "../components/cv/CVExperience";
+import positionsStyles from "../css/positions.module.css";
+import CVSidebar from "../components/cv/CVSidebar";
+import CVProjects from "../components/cv/CVProjects";
+import CVEducation from "../components/cv/CVEducation";
 
 export default () => (
     <Layout>
         <h3>WIP - Work in Progress</h3>
-        <aside style={{float: "right"}}>
-            <h1>Contacts (noheader)</h1>
-            <h1>Download CV</h1>
-            <h1>Languages</h1>
-            <h1>Certificates</h1>
-            <h1>Interests</h1>
-        </aside>
-        <h1>Professional Experinece</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
-        <h1>Extra-Curricular Activities</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
-        <h1>Projects</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
-        <h1>Skills</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
-        <h1>Education</h1>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-            <li>Sit Amet</li>
-        </ul>
+
+        <div className={positionsStyles.unbalancedTwoColumnContainer}>
+            <div style={{marginRight: "2em"}}>
+                <CVExperience/>
+                <CVEducation/>
+                <CVProjects/>
+            </div>
+
+            <CVSidebar/>
+        </div>
     </Layout>
 );
+
+export const query = graphql`
+    query {
+        allMarkdownRemark(
+            filter: {
+                frontmatter: {
+                    cv_section: {eq: "experience"}
+                }
+            }
+        ) {
+            totalCount
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        where
+                        date_start
+                        date_end
+                    }
+                    html
+                }
+            }
+        }
+    }
+`;
