@@ -1,0 +1,9 @@
+@import "./pallete.css";
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-light {
+    color: var(--grey);
+}

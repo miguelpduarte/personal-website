@@ -1,5 +1,5 @@
 import React from "react";
-import cvStyles from "./cv.module.css";
+import cvStyles from "../cv.module.css";
 
 export default ({node}) => (
     <div>

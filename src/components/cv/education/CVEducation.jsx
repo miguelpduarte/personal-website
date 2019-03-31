@@ -1,5 +1,5 @@
 import React from "react";
-import CVSection from "./CVSection";
+import CVSection from "../CVSection";
 import {graphql, StaticQuery} from "gatsby";
 import CVEducationItem from "./CVEducationItem";
 
