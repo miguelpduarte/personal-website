@@ -12,4 +12,4 @@ Static Website that queries Markdown files using GraphQL, developed using React 
 
 - [GatsbyJS](https://gatsbyjs.org)
 - React
-- GraphQL
+- GraphQL (via Gatsby, querying Markdown and JSON files, for example)

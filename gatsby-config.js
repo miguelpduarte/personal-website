@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 module.exports = {
     plugins: [
         {
@@ -15,10 +14,12 @@ module.exports = {
             },
         },
         "gatsby-transformer-remark",
+        "gatsby-transformer-json",
     ],
 
     siteMetadata: {
         title: "Miguel's Place!",
         description: "My personal website.",
+        siteUrl: "https://miguelpduarte.me",
     },
 };

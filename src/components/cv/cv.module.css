@@ -1,0 +1,31 @@
+@import "../../css/pallete.css";
+
+.section {
+    /* ridge
+    outset
+    inset
+    groove
+    double
+    dotted
+    dashed */
+    border-left: 8px solid var(--primary-color);
+    padding-left: 0.2em;
+}
+
+.section-subtitle {
+    color: var(--primary-color-light);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills-item {
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0.1em;
+}
