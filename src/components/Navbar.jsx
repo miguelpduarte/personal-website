@@ -13,10 +13,8 @@ export default () => (
             <h3 style={{ display: "inline" }}>miguelpduarte</h3>
         </Link>
         <ul style={{ listStyle: "none", display: "inline-block", margin: "0 1.5em" }}>
-            {/* <ListLink to="/">Home</ListLink> */}
             <ListLink to="/cv/">CV</ListLink>
             <ListLink to="/blog/">Blog</ListLink>
-            <ListLink to="/contact/">Contact</ListLink>
         </ul>
     </header>
 );

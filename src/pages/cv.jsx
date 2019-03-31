@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 import positionsStyles from "../css/positions.module.css";
-import CVExperience from "../components/cv/CVExperience";
-import CVSidebar from "../components/cv/CVSidebar";
-import CVProjects from "../components/cv/CVProjects";
-import CVEducation from "../components/cv/CVEducation";
+import CVExperience from "../components/cv/experience/CVExperience";
+import CVSidebar from "../components/cv/sidebar/CVSidebar";
+import CVProjects from "../components/cv/projects/CVProjects";
+import CVEducation from "../components/cv/education/CVEducation";
 
 export default () => (
     <Layout>
