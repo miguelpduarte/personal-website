@@ -1,8 +1,8 @@
 import React from "react";
 import {graphql, StaticQuery} from "gatsby";
-import CVSkills from "./CVSkills";
+import CVSkills from "./skills/CVSkills";
 import CVContacts from "./CVContacts";
-import CVInterests from "./CVInterests";
+import CVInterests from "./interests/CVInterests";
 
 const CVSidebar = ({data}) => (
     <aside>

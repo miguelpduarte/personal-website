@@ -1,13 +1,13 @@
 import React from "react";
-import CVSection from "./CVSection";
+import CVSection from "../CVSection";
 import {graphql, StaticQuery} from "gatsby";
-import CVProjectItem from "./CVProjectItem";
+import CVExperienceItem from "./CVExperienceItem";
 
-const CVProjects = ({data}) => (
-    <CVSection title="Projects">
+const CVExperience = ({data}) => (
+    <CVSection title="Experience">
         {data.allMarkdownRemark.edges.map(({node}) => (
             <React.Fragment key={node.id}>
-                <CVProjectItem node={node}/>
+                <CVExperienceItem node={node}/>
             </React.Fragment>
         ))}
     </CVSection>
@@ -20,7 +20,7 @@ export default props => (
                 allMarkdownRemark(
                     filter: {
                         frontmatter: {
-                            cv_section: {eq: "projects"}
+                            cv_section: {eq: "experience"}
                         }
                     }
                 ) {
@@ -29,7 +29,8 @@ export default props => (
                             id
                             frontmatter {
                                 title
-                                link
+                                where
+                                where_link
                                 date_start
                                 date_end
                             }
@@ -39,6 +40,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVProjects data={data} {...props} />}
+        render={data => <CVExperience data={data} {...props} />}
     />
 );
