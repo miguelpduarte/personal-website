@@ -7,3 +7,5 @@ date_start: 09/2016
 date_end: Present
 order_index: 10
 ---
+
+Student of a 5-year Integrated Master's Degree. Expected graduation date of July 2021.

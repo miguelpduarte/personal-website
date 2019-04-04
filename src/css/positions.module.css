@@ -22,7 +22,19 @@
     grid-template: auto / 50% 50%;
 }
 
-.unbalanced-two-column-container {
-    display: grid;
-    grid-template: auto / 70% auto;
+
+/* 
+Design for mobile first (XS, less than 480px)
+Add HS (Horizontal Small Devices) classes in your HTML: col-hs-*, visible-hs, ... and design for horizontal mobile devices (HS, less than 768px)
+Design for tablet devices (SM, less than 992px)
+Design for desktop devices (MD, less than 1200px)
+Design for large devices (LG, more than 1200px)
+*/
+
+@media screen and (min-width: 768px) {
+    .unbalanced-two-column-container {
+        display: grid;
+        grid-template: auto / 70% auto;
+    }
 }
+
