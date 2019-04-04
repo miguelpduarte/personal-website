@@ -5,6 +5,7 @@ where: NIAEFEUP
 where_link: https://ni.fe.up.pt
 date_start: 08/2018
 date_end: Present
+order_index: 4
 ---
 
 Informatics Division of the Student's Union of FEUP, responsible for several projects and events throughout the school year. Previously a member since 05/2017.

@@ -4,6 +4,7 @@ title: Robinix - LCOM@FEUP
 link: https://www.youtube.com/watch?v=kZaAvojwuRg
 date_start: 10/2017
 date_end: 10/2017
+order_index: 2
 ---
 
 Low level game in the context of the Computer Labs (LCOM) course unit that implemented several device drivers (timer, keyboard, mouse, graphics, RTC and Serial Port), later on chosen

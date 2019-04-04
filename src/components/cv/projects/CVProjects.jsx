@@ -18,6 +18,7 @@ export default props => (
         query={graphql`
             query {
                 allMarkdownRemark(
+                    sort: { fields: [frontmatter___order_index], order: DESC },
                     filter: {
                         frontmatter: {
                             cv_section: {eq: "projects"}
