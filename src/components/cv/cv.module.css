@@ -29,3 +29,8 @@
     color: white;
     margin: 0.1em;
 }
+
+.date {
+    /* opacity: 0.5; */
+    color: var(--grey);
+}

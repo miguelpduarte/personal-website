@@ -29,3 +29,26 @@
 .left-medium {
     margin-left: 3em;
 }
+
+.vertical-extra-small {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.top-extra-small {
+    margin-top: 0.5em;
+}
+
+.horizontal-remove {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.vertical-remove {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bottom-remove {
+    margin-bottom: 0;
+}
