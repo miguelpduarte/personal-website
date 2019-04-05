@@ -1,3 +1,19 @@
+.top-small {
+    margin-top: 1.5em;
+}
+
+.right-small {
+    margin-right: 1.5em;
+}
+
+.bottom-small {
+    margin-bottom: 1.5em;
+}
+
 .left-small {
     margin-left: 1.5em;
+}
+
+.bottom-medium {
+    margin-bottom: 3em;
 }
