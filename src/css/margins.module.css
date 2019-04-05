@@ -14,6 +14,18 @@
     margin-left: 1.5em;
 }
 
+.top-medium {
+    margin-top: 3em;
+}
+
+.right-medium {
+    margin-right: 3em;
+}
+
 .bottom-medium {
     margin-bottom: 3em;
+}
+
+.left-medium {
+    margin-left: 3em;
 }

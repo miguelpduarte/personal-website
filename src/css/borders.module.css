@@ -1,3 +1,9 @@
+@import "./pallete.css";
+
 .round {
     border-radius: 100%;
+}
+
+.thin-primary {
+    border: 8px solid var(--primary-color-dark);
 }

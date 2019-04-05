@@ -6,11 +6,11 @@ import CVExperience from "../components/cv/experience/CVExperience";
 import CVSidebar from "../components/cv/sidebar/CVSidebar";
 import CVProjects from "../components/cv/projects/CVProjects";
 import CVEducation from "../components/cv/education/CVEducation";
+import CVHeader from "../components/cv/CVHeader";
 
 export default () => (
     <Layout>
-        <h3>WIP - Work in Progress</h3>
-        <h3>Header here</h3>
+        <CVHeader/>
 
         <div className={positionsStyles.unbalancedTwoColumnContainer}>
             <div className={marginStyles.rightSmall}>
