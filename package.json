@@ -18,7 +18,7 @@
     "gatsby-transformer-remark": "^2.1.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-typography": "^0.16.13",
+    "react-typography": "^0.16.19",
     "typography": "^0.16.17",
     "typography-theme-de-young": "^0.16.9"
   },
