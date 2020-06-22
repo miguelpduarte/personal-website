@@ -20,7 +20,7 @@
     "react-dom": "^16.6.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
-    "typography-theme-de-young": "^0.16.9"
+    "typography-theme-de-young": "^0.16.19"
   },
   "lint-staged": {
     "*.js": "eslint",
