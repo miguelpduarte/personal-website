@@ -19,7 +19,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-typography": "^0.16.13",
-    "typography": "^0.16.17",
+    "typography": "^0.16.19",
     "typography-theme-de-young": "^0.16.9"
   },
   "lint-staged": {
