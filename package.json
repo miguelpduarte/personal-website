@@ -11,7 +11,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
-    "gatsby": "^2.3.3",
+    "gatsby": "^2.24.8",
     "gatsby-plugin-typography": "^2.2.1",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-json": "^2.1.11",
