@@ -3,13 +3,14 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import colors from "../css/colors.module.css";
+import cvStyles from "../components/cv/cv.module.css";
 
 export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
             <div>
-                <h1 style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
+                <h1 className={cvStyles.section} style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
                 <div className="post-details" style={{ marginBottom: "1.45rem" }}>
                     <span>{post.frontmatter.fullDate}</span>
                     <span>&nbsp;-&nbsp;</span>
@@ -17,7 +18,12 @@ export default ({ data }) => {
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
                     <>
                         <br/>
-                        <span role="tags" style={{ fontFamily: "monospaced", fontSize: "75%" }} className={colors.textLight}>[{post.frontmatter.tags.join(", ")}]</span>
+                        <span
+                            role="tags"
+                            style={{ fontFamily: "monospaced", fontSize: "75%" }}
+                            className={colors.textLight}
+                        >[{post.frontmatter.tags.join(", ")}]
+                        </span>
                     </>)}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
