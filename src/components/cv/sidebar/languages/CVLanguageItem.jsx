@@ -1,6 +1,6 @@
 import React from "react";
-import colorStyles from "../../../../css/colors.module.css";
+import textStyles from "../../../../css/text-styles.module.css";
 
 export default ({ node }) => (
-    <div>{node.name}{": "}<span className={colorStyles.textPrimary}>{node.level}</span></div>
+    <div>{node.name}{": "}<span className={textStyles.primary}>{node.level}</span></div>
 );

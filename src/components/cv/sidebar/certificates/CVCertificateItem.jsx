@@ -1,9 +1,9 @@
 import React from "react";
-import colorStyles from "../../../../css/colors.module.css";
+import textStyles from "../../../../css/text-styles.module.css";
 
 export default ({ node }) => (
     <div>
         <h4>{node.name}</h4>
-        <h5 className={colorStyles.textLight}>{node.subtitle}</h5>
+        <h5 className={textStyles.light}>{node.subtitle}</h5>
     </div>
 );

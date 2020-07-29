@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import colors from "../css/colors.module.css";
+import textStyles from "../css/text-styles.module.css";
 import cvStyles from "../components/cv/cv.module.css";
 
 export default ({ data }) => {
@@ -21,7 +21,7 @@ export default ({ data }) => {
                         <span
                             role="tags"
                             style={{ fontFamily: "monospaced", fontSize: "75%" }}
-                            className={colors.textLight}
+                            className={textStyles.light}
                         >[{post.frontmatter.tags.join(", ")}]
                         </span>
                     </>)}
