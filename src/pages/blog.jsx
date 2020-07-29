@@ -7,7 +7,7 @@ import cvStyles from "../components/cv/cv.module.css";
 
 export default ({ data }) => (
     <Layout>
-        <h1 className={cvStyles.section}>Blog Posts:</h1>
+        <h1 className={cvStyles.section}>My Blog:</h1>
         <p>
             This is a place where I jot down some thoughts I&apos;ve been having,
             some things I have been working on or just generally some rambling nonsense.
@@ -15,6 +15,7 @@ export default ({ data }) => (
             Occasionally there might be some writeups here too, so stay tuned for that!
         </p>
         <p>This blog is also available as an RSS feed to consume via <a href="https://theoldreader.com">TheOldReader</a> or similar :)</p>
+        <h1 className={cvStyles.section}>Blog Posts:</h1>
         <ol style={{ padding: 0, margin: 0 }}>
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <li style={{ listStyleType: "none", padding: 0, margin: 0 }} key={node.id}>
