@@ -8,7 +8,6 @@ order_index: 3
 ---
 
 Developed the visual interface for the board game "Mad Bishops" using WebCGF (a WebGL library) and JavaScript.
-
 Integrated it with the game logic developed in SICStus Prolog during the semester in PLOG@FEUP.
 
 Final Course Grade of 20/20.

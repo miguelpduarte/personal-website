@@ -3,7 +3,7 @@ cv_section: projects
 title: move-ment (Public Transport Schedule Viewer)
 link: https://github.com/miguelpduarte/move-ment
 date_start: 06/2019
-date_end: Present
+date_end: 08/2019
 order_index: 6
 ---
 

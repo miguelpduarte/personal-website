@@ -14,4 +14,4 @@ I created this since I notised how troublesome and undocumented the manual confi
 
 **Technologies:**
 
-- Bash, Docker, Git, Linux SysAdmin
+- Bash, Docker, Git, Apache, Linux SysAdmin
