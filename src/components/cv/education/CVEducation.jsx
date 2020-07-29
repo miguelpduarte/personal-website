@@ -1,19 +1,19 @@
 import React from "react";
 import CVSection from "../CVSection";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import CVEducationItem from "./CVEducationItem";
 
-const CVEducation = ({data}) => (
-    <CVSection title="Education">
-        {data.allMarkdownRemark.edges.map(({node}) => (
+const CVEducation = ({ data }) => (
+    <CVSection id="cv-education" title="Education">
+        {data.allMarkdownRemark.edges.map(({ node }) => (
             <React.Fragment key={node.id}>
                 <CVEducationItem node={node}/>
             </React.Fragment>
         ))}
     </CVSection>
 );
-  
-export default props => (
+
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -41,6 +41,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVEducation data={data} {...props} />}
+        render={(data) => <CVEducation data={data} {...props} />}
     />
 );

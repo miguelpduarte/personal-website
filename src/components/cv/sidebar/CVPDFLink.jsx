@@ -1,14 +1,14 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import CVSection from "../CVSection";
 
-const CVPDFLink = ({data}) => (
+const CVPDFLink = ({ data }) => (
     <a href={data.myInfoJson.cv_pdf_url}>
         <CVSection title="CV PDF"/>
     </a>
 );
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -17,6 +17,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVPDFLink data={data} {...props} />}
+        render={(data) => <CVPDFLink data={data} {...props} />}
     />
 );

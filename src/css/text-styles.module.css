@@ -1,0 +1,18 @@
+@import "./pallete.css";
+
+.primary {
+    color: var(--primary-color);
+}
+
+.primary-dark {
+    color: var(--primary-color-dark);
+}
+
+.light {
+    color: var(--grey);
+}
+
+.main-anchor {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

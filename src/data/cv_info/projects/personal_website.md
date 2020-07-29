@@ -7,10 +7,9 @@ date_end: Present
 order_index: 5
 ---
 
-Static Website that queries Markdown files using GraphQL, developed using React and [GatsbyJS](https://gatsbyjs.org).
+Static Website that queries Markdown and JSON files using GraphQL, developed using React and [GatsbyJS](https://gatsbyjs.org).
 
 **Technologies:**
 
-- [GatsbyJS](https://gatsbyjs.org)
-- React
+- GatsbyJS, React
 - GraphQL (via Gatsby, querying Markdown and JSON files, for example)

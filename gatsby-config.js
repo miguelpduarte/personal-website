@@ -13,7 +13,16 @@ module.exports = {
                 path: `${__dirname}/src/`, // eslint-disable-line
             },
         },
-        "gatsby-transformer-remark",
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [
+                    {
+                        resolve: "gatsby-remark-prismjs", options: {},
+                    },
+                ],
+            },
+        },
         "gatsby-transformer-json",
     ],
 

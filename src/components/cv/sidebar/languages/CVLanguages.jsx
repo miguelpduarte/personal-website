@@ -1,9 +1,9 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import CVLanguageItem from "./CVLanguageItem";
 import CVSection from "../../CVSection";
 
-const CVLanguages = ({data}) => (
+const CVLanguages = ({ data }) => (
     <CVSection title="Languages">
         {data.allLanguagesJson.nodes.map((node, index) => (
             <CVLanguageItem key={index} node={node}/>
@@ -11,7 +11,7 @@ const CVLanguages = ({data}) => (
     </CVSection>
 );
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -23,6 +23,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVLanguages data={data} {...props} />}
+        render={(data) => <CVLanguages data={data} {...props} />}
     />
 );

@@ -1,14 +1,31 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
 
-export default ({data}) => {
+import Layout from "../components/Layout";
+import textStyles from "../css/text-styles.module.css";
+import cvStyles from "../components/cv/cv.module.css";
+
+export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
             <div>
-                <h1>{post.frontmatter.title}</h1>
-                <h2>{post.timeToRead + " minute read"}</h2>
+                <h1 className={cvStyles.section} style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
+                <div className="post-details" style={{ marginBottom: "1.45rem" }}>
+                    <span>{post.frontmatter.fullDate}</span>
+                    <span>&nbsp;-&nbsp;</span>
+                    <span>{`${post.timeToRead} minute read`}</span>
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+                    <>
+                        <br/>
+                        <span
+                            role="tags"
+                            style={{ fontFamily: "monospaced", fontSize: "75%" }}
+                            className={textStyles.light}
+                        >[{post.frontmatter.tags.join(", ")}]
+                        </span>
+                    </>)}
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>
@@ -21,6 +38,8 @@ export const query = graphql`
             html
             frontmatter {
                 title
+                fullDate: date(formatString: "DD MMMM, YYYY")
+                tags
             }
             timeToRead
         }
