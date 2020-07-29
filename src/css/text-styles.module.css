@@ -4,6 +4,10 @@
     color: var(--primary-color);
 }
 
+.primary-dark {
+    color: var(--primary-color-dark);
+}
+
 .light {
     color: var(--grey);
 }

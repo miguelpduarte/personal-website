@@ -21,7 +21,7 @@ export default ({ data }) => (
                     { name: "CV PDF", isHref: true, linksto: data.myInfoJson.cv_pdf_url },
                     { name: "Online CV", linksto: "cv" },
                     { name: "Blog", linksto: "blog" },
-                    { name: "JS Games", isHref: true, linksto: "https://js-games.miguelpduarte.me" },
+                    // { name: "JS Games", isHref: true, linksto: "https://js-games.miguelpduarte.me" },
                 ]}
             />
         </BoxContainer>
