@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby";
 import CVEducationItem from "./CVEducationItem";
 
 const CVEducation = ({ data }) => (
-    <CVSection title="Education">
+    <CVSection id="cv-education" title="Education">
         {data.allMarkdownRemark.edges.map(({ node }) => (
             <React.Fragment key={node.id}>
                 <CVEducationItem node={node}/>

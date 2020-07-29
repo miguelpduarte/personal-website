@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby";
 import CVProjectItem from "./CVProjectItem";
 
 const CVProjects = ({ data }) => (
-    <CVSection title="Projects">
+    <CVSection id="cv-projects" title="Projects">
         {data.allMarkdownRemark.edges.map(({ node }) => (
             <React.Fragment key={node.id}>
                 <CVProjectItem node={node}/>
