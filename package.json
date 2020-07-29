@@ -16,7 +16,7 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-remark": "^2.1.11",
-    "react": "^16.6.0",
+    "react": "^16.13.1",
     "react-dom": "^16.6.0",
     "react-icons": "^3.5.0",
     "react-typography": "^0.16.13",
