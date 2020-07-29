@@ -1,12 +1,38 @@
 [
-    {"name": "C"},
-    {"name": "C++"},
-    {"name": "Java"},
-    {"name": "Javascript"},
-    {"name": "React"},
-    {"name": "Git"},
-    {"name": "CSS"},
-    {"name": "Node.js"},
-    {"name": "Linux"},
-    {"name": "Bash"}
+    {
+        "name": "Javascript"
+    },
+    {
+        "name": "Git"
+    },
+    {
+        "name": "Linux"
+    },
+    {
+        "name": "Bash"
+    },
+    {
+        "name": "Java"
+    },
+    {
+        "name": "Elixir"
+    },
+    {
+        "name": "React"
+    },
+    {
+        "name": "Docker"
+    },
+    {
+        "name": "Node.js"
+    },
+    {
+        "name": "C"
+    },
+    {
+        "name": "C++"
+    },
+    {
+        "name": "CSS"
+    }
 ]

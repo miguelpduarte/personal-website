@@ -7,7 +7,7 @@ date_end: 01/2019
 order_index: 4
 ---
 
-Social network for sharing stories.
+Social network for sharing user-submitted stories. Technical restriction of not using frameworks or libraries of any kind as a way to be introduced to the basics of web development without abstractions that might hide concepts. Developed in a team of 3 people.
 
 **Technologies:**
 
