@@ -2,9 +2,24 @@
 title: Another Post
 date: "2019-03-27"
 blogpost: true
+tags: ["pepega", "kekw"]
 ---
-# This is a second post
+**This is a second post**
 
-Bacon ipsum dolor sit bacon, I like stuff that is done with bacon.
+Wow this is a lot of content!
+I'm going to write down some code!
 
-Boy how fun it is to ride in a one horsed open sleigh.
+```javascript{numberLines: true}
+this = "amazing code";
+that = this;
+
+// Typical js lmao
+
+for (let i = 0; i < 10; ++i) {
+    console.log(i);
+}
+```
+
+Wasn't that nice code? A footnote now.[^note1]
+
+[^note1]: Just testing if this works!
