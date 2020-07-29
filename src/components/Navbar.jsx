@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import textStyles from "../css/text-styles.module.css";
+
 const ListLink = (props) => (
     <li style={{ display: "inline-block", marginRight: "1rem" }}>
-        <Link to={props.to}>{props.children}</Link>
+        <Link className={textStyles.primary} to={props.to}>{props.children}</Link>
     </li>
 );
 
