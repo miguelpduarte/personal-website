@@ -1,12 +1,12 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import positionStyles from "../../css/positions.module.css";
 import borderStyles from "../../css/borders.module.css";
 import marginStyles from "../../css/margins.module.css";
 import profilePic from "../../data/images/miguel.png";
 
-const CVHeader = ({data}) => {
-    const {myInfoJson} = data;
+const CVHeader = ({ data }) => {
+    const { myInfoJson } = data;
     return (
         <div className={positionStyles.unbalancedTwoColumnContainer}>
             <div className={marginStyles.rightMedium}>
@@ -14,12 +14,12 @@ const CVHeader = ({data}) => {
                 <h2>{myInfoJson.position}</h2>
                 <p>{myInfoJson.bio}</p>
             </div>
-            <img className={borderStyles.round + " " + borderStyles.thinPrimary} height="250" src={profilePic}/>
+            <img className={`${borderStyles.round} ${borderStyles.thinPrimary}`} height="250" src={profilePic}/>
         </div>
     );
 };
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -30,6 +30,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVHeader data={data} {...props} />}
+        render={(data) => <CVHeader data={data} {...props} />}
     />
 );

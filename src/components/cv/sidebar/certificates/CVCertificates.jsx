@@ -1,9 +1,9 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import CVCertificateItem from "./CVCertificateItem";
 import CVSection from "../../CVSection";
 
-const CVCertificates = ({data}) => (
+const CVCertificates = ({ data }) => (
     <CVSection title="Certificates">
         {data.allCertificatesJson.nodes.map((node, index) => (
             <CVCertificateItem key={index} node={node}/>
@@ -11,7 +11,7 @@ const CVCertificates = ({data}) => (
     </CVSection>
 );
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -24,6 +24,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVCertificates data={data} {...props} />}
+        render={(data) => <CVCertificates data={data} {...props} />}
     />
 );

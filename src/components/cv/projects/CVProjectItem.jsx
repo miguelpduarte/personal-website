@@ -5,12 +5,12 @@ import CVSectionDate from "../CVSectionDate";
 import CVSectionText from "../CVSectionText";
 import { FiExternalLink } from "react-icons/fi";
 
-export default ({node}) => (
+export default ({ node }) => (
     <div className={marginStyles.bottomMedium}>
         <h2>
             <a className={cvStyles.sectionSubtitle} href={node.frontmatter.link}>
                 {node.frontmatter.title}
-                <FiExternalLink style={{verticalAlign: "text-bottom"}} className={marginStyles.leftMiniscule}/>
+                <FiExternalLink style={{ verticalAlign: "text-bottom" }} className={marginStyles.leftMiniscule}/>
             </a>
         </h2>
         <CVSectionDate start={node.frontmatter.date_start} end={node.frontmatter.date_end}/>

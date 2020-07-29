@@ -1,10 +1,10 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import chipStyles from "../../../../css/chips.module.css";
 import CVInterestsItem from "./CVInterestsItem";
 import CVSection from "../../CVSection";
 
-const CVInterests = ({data}) => (
+const CVInterests = ({ data }) => (
     <CVSection title="Interests">
         <div className={chipStyles.container}>
             {data.allInterestsJson.nodes.map((node, index) => (
@@ -16,7 +16,7 @@ const CVInterests = ({data}) => (
     </CVSection>
 );
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -27,6 +27,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVInterests data={data} {...props} />}
+        render={(data) => <CVInterests data={data} {...props} />}
     />
 );

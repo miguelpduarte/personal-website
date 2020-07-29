@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import boxContainerStyles from "./box-container.module.css";
 import shadowStyles from "../css/shadows.module.css";
 
-export default ({isHref, name, linksto}) => (
+export default ({ isHref, name, linksto }) => (
     <React.Fragment>
         {
             (isHref ?

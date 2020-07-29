@@ -5,7 +5,7 @@ import CVSectionSubtitle from "../CVSectionSubtitle";
 import CVSectionDate from "../CVSectionDate";
 import CVSectionText from "../CVSectionText";
 
-export default ({node}) => (
+export default ({ node }) => (
     <div className={marginStyles.bottomMedium}>
         <CVSectionTitle text={node.frontmatter.title}/>
         <CVSectionSubtitle text={node.frontmatter.where} link={node.frontmatter.where_link}/>
