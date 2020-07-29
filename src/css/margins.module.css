@@ -1,43 +1,59 @@
-.top-small {
-    margin-top: 1.5em;
+@import "./sizes.css";
+
+/* Miniscule */
+
+.left-miniscule {
+    margin-left: var(--miniscule);
 }
 
-.right-small {
-    margin-right: 1.5em;
-}
-
-.bottom-small {
-    margin-bottom: 1.5em;
-}
-
-.left-small {
-    margin-left: 1.5em;
-}
-
-.top-medium {
-    margin-top: 3em;
-}
-
-.right-medium {
-    margin-right: 3em;
-}
-
-.bottom-medium {
-    margin-bottom: 3em;
-}
-
-.left-medium {
-    margin-left: 3em;
-}
+/* Extra Small  */
 
 .vertical-extra-small {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: var(--extra-small);
+    margin-bottom: var(--extra-small);
 }
 
 .top-extra-small {
-    margin-top: 0.5em;
+    margin-top: var(--extra-small);
 }
+
+/* Small */
+
+.top-small {
+    margin-top: var(--small);
+}
+
+.right-small {
+    margin-right: var(--small);
+}
+
+.bottom-small {
+    margin-bottom: var(--small);
+}
+
+.left-small {
+    margin-left: var(--small);
+}
+
+/* Medium */
+
+.top-medium {
+    margin-top: var(--medium);
+}
+
+.right-medium {
+    margin-right: var(--medium);
+}
+
+.bottom-medium {
+    margin-bottom: var(--medium);
+}
+
+.left-medium {
+    margin-left: var(--medium);
+}
+
+/* Remove */
 
 .horizontal-remove {
     margin-left: 0;
