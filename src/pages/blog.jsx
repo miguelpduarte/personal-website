@@ -4,9 +4,11 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import BlogListItem from "../components/BlogListItem";
 import cvStyles from "../components/cv/cv.module.css";
+import Seo from "../components/Seo";
 
 export default ({ data }) => (
     <Layout>
+        <Seo title="Blog" />
         <h1 className={cvStyles.section}>My Blog:</h1>
         <p>
             This is a place where I jot down some thoughts I&apos;ve been having,
@@ -36,7 +38,6 @@ export const query = graphql`
                 }
             }
         ) {
-            totalCount
             edges {
                 node {
                     id
@@ -48,7 +49,6 @@ export const query = graphql`
                     fields {
                         slug
                     }
-                    excerpt
                     timeToRead
                 }
             }

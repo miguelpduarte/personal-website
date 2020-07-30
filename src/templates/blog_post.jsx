@@ -4,11 +4,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import textStyles from "../css/text-styles.module.css";
 import cvStyles from "../components/cv/cv.module.css";
+import Seo from "../components/Seo";
 
 export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
+            <Seo title={post.frontmatter.title} article={true} />
             <div>
                 <h1 className={cvStyles.section} style={{ marginBottom: 0 }}>{post.frontmatter.title}</h1>
                 <div className="post-details" style={{ marginBottom: "1.45rem" }}>

@@ -24,11 +24,51 @@ module.exports = {
             },
         },
         "gatsby-transformer-json",
+        "gatsby-plugin-react-helmet",
+        {
+            resolve: "gatsby-plugin-feed",
+            options: {
+                feeds: [
+                    {
+                        query: `
+                        {
+                            allMarkdownRemark(
+                                sort: { fields: [frontmatter___date], order: DESC },
+                                filter: {
+                                    frontmatter: {
+                                        blogpost: {eq: true}
+                                    }
+                                }
+                            ) {
+                                edges {
+                                    node {
+                                        excerpt
+                                        html
+                                        fields { slug }
+                                        frontmatter {
+                                            title
+                                            date
+                                            tags
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        `,
+                        title: "Miguel Duarte's Blog",
+                        output: "/rss.xml",
+                    },
+                ],
+            },
+        },
     ],
 
     siteMetadata: {
-        title: "Miguel's Place!",
-        description: "My personal website.",
+        title: "Miguel Duarte",
+        titleTemplate: "%s ~ Miguel Duarte",
+        description: "miguelpduarte's personal website and blog",
         siteUrl: "https://miguelpduarte.me",
+        image: "/images/miguel.png",
+        twitterUsername: "@miguelpduarte",
     },
 };
