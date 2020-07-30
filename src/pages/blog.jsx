@@ -36,7 +36,6 @@ export const query = graphql`
                 }
             }
         ) {
-            totalCount
             edges {
                 node {
                     id
@@ -48,7 +47,6 @@ export const query = graphql`
                     fields {
                         slug
                     }
-                    excerpt
                     timeToRead
                 }
             }

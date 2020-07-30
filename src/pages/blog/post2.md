@@ -1,7 +1,7 @@
 ---
 title: Another Post
 date: "2019-03-27"
-blogpost: true
+blogpost: false
 tags: ["pepega", "kekw"]
 ---
 **This is a second post**
@@ -21,5 +21,8 @@ for (let i = 0; i < 10; ++i) {
 ```
 
 Wasn't that nice code? A footnote now.[^note1]
+
+This blog post is currently disabled but needs to exist to serve as a mock for tags to exist in the GraphQL schema :)
+If I only have posts without tags, it crashes when trying to access that property :)))
 
 [^note1]: Just testing if this works!
