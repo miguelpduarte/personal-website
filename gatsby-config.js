@@ -24,6 +24,7 @@ module.exports = {
             },
         },
         "gatsby-transformer-json",
+        "gatsby-plugin-react-helmet",
         {
             resolve: "gatsby-plugin-feed",
             options: {
@@ -67,5 +68,7 @@ module.exports = {
         titleTemplate: "%s ~ Miguel Duarte",
         description: "miguelpduarte's personal website and blog",
         siteUrl: "https://miguelpduarte.me",
+        image: "/images/miguel.png",
+        twitterUsername: "@miguelpduarte",
     },
 };

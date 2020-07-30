@@ -1,14 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
+
 import positionStyles from "../css/positions.module.css";
 import borderStyles from "../css/borders.module.css";
 import BoxContainer from "../components/BoxContainer";
 import BoxContainerList from "../components/BoxContainerList";
 import Background from "../components/Background";
 import profilePic from "../data/images/miguel.png";
+import Seo from "../components/Seo";
 
 export default ({ data }) => (
     <div className={`${positionStyles.stretchinerinoVertical} ${positionStyles.verticalizerinator9001}`}>
+        <Seo title="Welcome!" />
         <Background />
         <BoxContainer>
             <img className={borderStyles.round} width="175" src={profilePic}/>
