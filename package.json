@@ -34,7 +34,6 @@
     "*.jsx": "eslint"
   },
   "pre-commit": "lint-staged",
-  "pre-push": "",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-babel": "^5.3.1",
@@ -44,7 +43,6 @@
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "pre-commit": "^1.2.2",
-    "pre-push": "^0.1.1",
     "testing-library": "0.0.2"
   }
 }
