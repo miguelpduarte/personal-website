@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import "katex/dist/katex.min.css";
+
 import Layout from "../components/Layout";
 import textStyles from "../css/text-styles.module.css";
 import cvStyles from "../components/cv/cv.module.css";
