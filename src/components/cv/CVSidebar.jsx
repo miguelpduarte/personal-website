@@ -1,10 +1,10 @@
 import React from "react";
-import {graphql, StaticQuery} from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import CVSkills from "./CVSkills";
 import CVContacts from "./CVContacts";
 import CVInterests from "./CVInterests";
 
-const CVSidebar = ({data}) => (
+const CVSidebar = ({ data }) => (
     <aside>
         <CVContacts/>
         <a href={data.myInfoJson.cv_pdf_url}><h1>CV PDF</h1></a>
@@ -15,7 +15,7 @@ const CVSidebar = ({data}) => (
     </aside>
 );
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -24,6 +24,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <CVSidebar data={data} {...props} />}
+        render={(data) => <CVSidebar data={data} {...props} />}
     />
 );

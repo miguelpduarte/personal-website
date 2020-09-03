@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import "katex/dist/katex.min.css";
+
 import Layout from "../components/Layout";
 import textStyles from "../css/text-styles.module.css";
 import cvStyles from "../components/cv/cv.module.css";
@@ -18,15 +20,15 @@ export default ({ data }) => {
                     <span>&nbsp;-&nbsp;</span>
                     <span>{`${post.timeToRead} minute read`}</span>
                     {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <>
-                        <br/>
-                        <span
-                            role="tags"
-                            style={{ fontFamily: "monospaced", fontSize: "75%" }}
-                            className={textStyles.light}
-                        >[{post.frontmatter.tags.join(", ")}]
-                        </span>
-                    </>)}
+                        <>
+                            <br/>
+                            <span
+                                role="tags"
+                                style={{ fontFamily: "monospaced", fontSize: "75%" }}
+                                className={textStyles.light}
+                            >[{post.frontmatter.tags.join(", ")}]
+                            </span>
+                        </>)}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
