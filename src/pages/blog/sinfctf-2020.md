@@ -1,6 +1,6 @@
 ---
 title: "Solo-organizing SINF CTF 2020"
-date: "2020-11-11"
+date: "2020-11-12"
 blogpost: true
 tags: [CTF, infosec]
 ---
