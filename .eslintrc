@@ -20,8 +20,7 @@
     "plugins": [
         "react",
         "react-hooks",
-        "babel",
-        "testing-library"
+        "babel"
     ],
     "extends": [
         "eslint:recommended",
@@ -252,9 +251,9 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         // Testing Library
-        "testing-library/await-async-query": "error",
-        "testing-library/no-await-sync-query": "error",
-        "testing-library/no-debug": "warn"
+        // "testing-library/await-async-query": "error",
+        // "testing-library/no-await-sync-query": "error",
+        // "testing-library/no-debug": "warn"
     }
     // "overrides": [
     //     {
