@@ -1,6 +1,6 @@
 ---
 title: "FWordCTF 2021 Writeup - SeoFtw and devprivops"
-date: "2021-08-29"
+date: "2021-08-31"
 blogpost: true
 tags: [CTF, writeup, infosec]
 ---
