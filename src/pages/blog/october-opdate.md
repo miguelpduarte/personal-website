@@ -2,7 +2,7 @@
 title: "October Opdate"
 date: "2020-10-19"
 blogpost: true
-tags: []
+tags: [personal update]
 ---
 Hello everyone! Given the lack of blog posts recently I decided to write a short one (this one) telling you all what I've been up to and why the slowdown in content recently.
 

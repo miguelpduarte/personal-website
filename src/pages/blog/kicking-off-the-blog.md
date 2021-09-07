@@ -2,7 +2,7 @@
 title: (Finally) Kicking off the blog. whoami and what have I been up to
 date: "2020-07-29"
 blogpost: true
-tags: []
+tags: [personal update]
 ---
 Hello everyone! It appears I was reminded by some [cool](https://hugopeixoto.net/articles) [people](https://blog.ruialves.me) that having blogs is a thing some people do on the internet.
 Given that I already had this kind of working a while back (by following Gatsby's tutorials on setting up a simple website) I thought I'd get it into shape and start rambling about stuff I do online.

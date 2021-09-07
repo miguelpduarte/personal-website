@@ -2,7 +2,7 @@
 title: "Status Update: December, January and February"
 date: "2021-02-15"
 blogpost: true
-tags: []
+tags: [personal update]
 ---
 The past few months have gone by quickly and sadly without blog posts. As such, I'm writing this to fix that :)
 
