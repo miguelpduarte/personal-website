@@ -32,7 +32,7 @@ Enough about challenge design, let's get into this specific challenge!
 
 After solving the challenge I was stunned when I noticed that I was the fifth solver at the time:
 
-![Importing the image into GIMP](./images/fword-ctf-2021/seoftw_solvers.png)
+![SeoFtw solvers list](./images/fword-ctf-2021/seoftw_solvers.png)
 
 Since many other challenges had already been released at the time, this was a great achievement for me, given that many times I only attempt challenges with a lot of solves due to thinking that they will be easier since a lot of people were able to solve them. Here's to believing in oneself!
 
@@ -358,3 +358,12 @@ I have heard that this usually dives into concepts from several areas ranging fr
 
 I'm also looking forward to writing an update blogpost ASAP.
 As I've mentioned, I'll probably split it up in a multi-part blogpost, at least to try and make sure that it starts coming out sooner rather than later, as I have been postponing this for _way_ too long.
+
+I hope you enjoyed reading my writeups of these challenges.<br/>
+And as always: thanks for reading!
+
+**Update (06/09/2021):**
+
+![Participation certificate](./images/fword-ctf-2021/cert.jpg)
+
+FWordCTF organizers sent out some cool looking participation certificates! Nice!
