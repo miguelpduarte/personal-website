@@ -13,7 +13,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.24.62",
-    "gatsby-plugin-feed": "^2.13.1",
+    "gatsby-plugin-feed": "^4.5.0",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.14.1",
     "gatsby-plugin-typography": "^2.5.10",
