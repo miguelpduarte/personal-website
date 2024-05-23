@@ -17,13 +17,14 @@ export default ({ data }) => (
             <img className={borderStyles.round} width="175" src={profilePic}/>
             <h1>Miguel Duarte</h1>
             {/* <h2>Informatics and Computer Engineering Student @ FEUP</h2> */}
-            <h2>Pentester | MSc in Informatics and Computer Engineering @ FEUP</h2>
+            {/* <h2>Pentester | MSc in Informatics and Computer Engineering @ FEUP</h2> */}
+            <h2>Software Engineer | MSc in Informatics and Computer Engineering @ FEUP</h2>
             <BoxContainerList
                 items={[
                     { name: "GitHub", isHref: true, linksto: data.myInfoJson.github },
                     { name: "LinkedIn", isHref: true, linksto: data.myInfoJson.linkedin },
                     { name: "CV PDF", isHref: true, linksto: data.myInfoJson.cv_pdf_url },
-                    { name: "Online CV", linksto: "cv" },
+                    // { name: "Online CV", linksto: "cv" },
                     { name: "Blog", linksto: "blog" },
                     // { name: "JS Games", isHref: true, linksto: "https://js-games.miguelpduarte.me" },
                 ]}
